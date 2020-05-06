@@ -1,0 +1,15 @@
+version: "2"
+services:
+  consul:
+    image: consul
+    ports:
+      - 8500:8500
+  mongodb:
+    image: mongo:latest
+    restart: always
+    command: mongod --auth
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - 27017:27017

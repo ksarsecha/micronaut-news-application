@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: hacker.news
+---
+testFramework: junit
+sourceLanguage: java
